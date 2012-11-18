@@ -75,15 +75,10 @@ sub {
 // -------------------------
 
 img {
-  max-width: 100%; // Make images inherently responsive
+  //had to remove was effecting about us page  max-width: 100%; // Make images inherently responsive
   vertical-align: middle;
   border: 0;
   -ms-interpolation-mode: bicubic;
-}
-
-// Prevent max-width from affecting Google Maps
-#map_canvas img {
-  max-width: none;
 }
 
 // Forms

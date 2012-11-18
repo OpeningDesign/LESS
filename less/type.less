@@ -8,6 +8,9 @@
 
 p {
   margin: 0 0 @baseLineHeight / 2;
+  font-family: @baseFontFamily;
+  font-size: @baseFontSize;
+  line-height: @baseLineHeight;
   small {
     font-size: @baseFontSize - 2;
     color: @grayLight;
@@ -35,15 +38,22 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 h1 {
-  font-size: 30px;
+  font-size: 21px;
   line-height: @baseLineHeight * 2;
+  font-weight: @Font_Light_Weight;
+
+
   small {
     font-size: 18px;
   }
 }
+
+
+
 h2 {
-  font-size: 24px;
+  font-size: 21px;
   line-height: @baseLineHeight * 2;
+  font-weight: @Font_Light_Weight;
   small {
     font-size: 18px;
   }
@@ -51,6 +61,8 @@ h2 {
 h3 {
   font-size: 18px;
   line-height: @baseLineHeight * 1.5;
+  font-weight: @Font_Light_Weight;
+  padding-bottom: 15px;
   small {
     font-size: 14px;
   }
@@ -107,11 +119,12 @@ ol {
 }
 li {
   line-height: @baseLineHeight;
+  display: block;
 }
 ul.unstyled,
 ol.unstyled {
   margin-left: 0;
-  list-style: none;
+  list-style: disc;
 }
 
 // Description Lists
@@ -168,7 +181,7 @@ em {
 // Abbreviations and acronyms
 abbr[title] {
   cursor: help;
-  border-bottom: 1px dotted @grayLight;
+  border-bottom: 1px dotted #ddd;
 }
 abbr.initialism {
   font-size: 90%;
@@ -182,6 +195,7 @@ blockquote {
   border-left: 5px solid @grayLighter;
   p {
     margin-bottom: 0;
+    margin-left: 2px !important;
     #font > .shorthand(16px,300,@baseLineHeight * 1.25);
   }
   small {

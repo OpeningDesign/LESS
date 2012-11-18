@@ -52,13 +52,13 @@
   padding: 4px 0;
   margin: 1px 0 0; // override default ul
   list-style: none;
-  background-color: @dropdownBackground;
-  border: 1px solid #ccc;
-  border: 1px solid rgba(0,0,0,.2);
-  *border-right-width: 2px;
-  *border-bottom-width: 2px;
-  .border-radius(5px);
-  .box-shadow(0 5px 10px rgba(0,0,0,.2));
+  //background-color: @dropdownBackground;
+  //border: 1px solid #ccc;
+  //border: 1px solid rgba(0,0,0,.2);
+  //border-right-width: 2px;
+  //border-bottom-width: 2px;
+  //.border-radius(5px);
+  //.box-shadow(0 5px 10px rgba(0,0,0,.2));
   -webkit-background-clip: padding-box;
      -moz-background-clip: padding;
           background-clip: padding-box;
@@ -71,7 +71,7 @@
 
   // Dividers (basically an hr) within the dropdown
   .divider {
-    .nav-divider(@dropdownDividerTop, @dropdownDividerBottom);
+    .nav-divider();
   }
 
   // Links within the dropdown menu
@@ -93,7 +93,7 @@
 .dropdown-menu .active > a:hover {
   color: @dropdownLinkColorHover;
   text-decoration: none;
-  background-color: @dropdownLinkBackgroundHover;
+  //background-color: @dropdownLinkBackgroundHover;
 }
 
 // Open state for the dropdown
@@ -103,14 +103,14 @@
   // make the menu appear below buttons that appeared later on the page
   *z-index: @zindexDropdown;
 
-  & > .dropdown-menu {
+  .dropdown-menu {
     display: block;
   }
 }
 
 // Right aligned dropdowns
 // ---------------------------
-.pull-right > .dropdown-menu {
+.pull-right .dropdown-menu {
   right: 0;
   left: auto;
 }

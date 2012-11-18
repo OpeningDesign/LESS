@@ -12,51 +12,55 @@
 // -------------------------
 @black:                 #000;
 @grayDarker:            #222;
-@grayDark:              #333;
+@grayDark:              #555759;
 @gray:                  #555;
-@grayLight:             #999;
-@grayLighter:           #eee;
+@grayLight:             #A7A7A8;
+@grayLighter:           #ddd;
 @white:                 #fff;
 
 
 // Accent colors
 // -------------------------
-@blue:                  #049cdb;
+@blue:                  #6093C4;
 @blueDark:              #0064cd;
 @green:                 #46a546;
 @red:                   #9d261d;
-@yellow:                #ffc40d;
+@yellow:                #FFFF00;
 @orange:                #f89406;
 @pink:                  #c3325f;
 @purple:                #7a43b6;
+@alert:                 #96C300;
 
 
 // Scaffolding
 // -------------------------
 @bodyBackground:        @white;
-@textColor:             @grayDark;
+@textColor:             @grayDarker;
 
 
 // Links
 // -------------------------
-@linkColor:             #08c;
-@linkColorHover:        darken(@linkColor, 15%);
+@linkColor:             @blue;
+@linkColorHover:        @blue;
 
 
 // Typography
 // -------------------------
-@sansFontFamily:        "Helvetica Neue", Helvetica, Arial, sans-serif;
+@sansFontFamily:        Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
 @serifFontFamily:       Georgia, "Times New Roman", Times, serif;
 @monoFontFamily:        Menlo, Monaco, Consolas, "Courier New", monospace;
 
 @baseFontSize:          13px;
+@FontSizeLarger:        15px;
+@FontSizeLarger2:       17px;
 @baseFontFamily:        @sansFontFamily;
 @baseLineHeight:        18px;
 @altFontFamily:         @serifFontFamily;
 
 @headingsFontFamily:    inherit; // empty to use BS default, @baseFontFamily
 @headingsFontWeight:    bold;    // instead of browser default, bold
-@headingsColor:         inherit; // empty to use BS default, @textColor
+@headingsColor:         @grayLight; // empty to use BS default, @textColor
+@Font_Light_Weight:			300;
 
 
 // Tables
@@ -96,7 +100,7 @@
 // -------------------------
 @inputBackground:               @white;
 @inputBorder:                   #ccc;
-@inputBorderRadius:             3px;
+@inputBorderRadius:             0px;
 @inputDisabledBackground:       @grayLighter;
 @formActionsBackground:         #f5f5f5;
 
@@ -105,10 +109,9 @@
 @dropdownBackground:            @white;
 @dropdownBorder:                rgba(0,0,0,.2);
 @dropdownLinkColor:             @grayDark;
-@dropdownLinkColorHover:        @white;
+@dropdownLinkColorHover:        @linkColor;
 @dropdownLinkBackgroundHover:   @linkColor;
-@dropdownDividerTop:            #e5e5e5;
-@dropdownDividerBottom:         @white;
+
 
 
 
@@ -122,9 +125,9 @@
 @zindexDropdown:          1000;
 @zindexPopover:           1010;
 @zindexTooltip:           1020;
-@zindexFixedNavbar:       1030;
-@zindexModalBackdrop:     1040;
-@zindexModal:             1050;
+@zindexFixedNavbar:       12000;//increase because of navbar overlap on SS
+@zindexModalBackdrop:     13000;//increase because of navbar overlap on SS
+@zindexModal:             14000;//increase because of navbar overlap on SS
 
 
 // Sprite icons path
@@ -145,13 +148,13 @@
 
 // Navbar
 // -------------------------
-@navbarHeight:                    40px;
+@navbarHeight:                    36px;
 @navbarBackground:                @grayDarker;
 @navbarBackgroundHighlight:       @grayDark;
 
-@navbarText:                      @grayLight;
-@navbarLinkColor:                 @grayLight;
-@navbarLinkColorHover:            @white;
+@navbarText:                      @black;
+@navbarLinkColor:                 @black;
+@navbarLinkColorHover:            lighten(@linkColor, 25%);
 @navbarLinkColorActive:           @navbarLinkColorHover;
 @navbarLinkBackgroundHover:       transparent;
 @navbarLinkBackgroundActive:      @navbarBackground;
@@ -196,7 +199,7 @@
 // Default 940px grid
 // -------------------------
 @gridColumns:             12;
-@gridColumnWidth:         60px;
+@gridColumnWidth:         70px;
 @gridGutterWidth:         20px;
 @gridRowWidth:            (@gridColumns * @gridColumnWidth) + (@gridGutterWidth * (@gridColumns - 1));
 
@@ -204,3 +207,8 @@
 // -------------------------
 @fluidGridColumnWidth:    6.382978723%;
 @fluidGridGutterWidth:    2.127659574%;
+
+
+
+
+

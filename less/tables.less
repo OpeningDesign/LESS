@@ -12,7 +12,12 @@ table {
   background-color: @tableBackground;
   border-collapse: collapse;
   border-spacing: 0;
+  	border: 0px;
+	border-style: none;
+	border-width: 0px;
 }
+
+
 
 // BASELINE STYLES
 // ---------------
@@ -23,11 +28,14 @@ table {
   // Cells
   th,
   td {
-    padding: 8px;
+    //padding: 8px;
     line-height: @baseLineHeight;
     text-align: left;
     vertical-align: top;
     border-top: 1px solid @tableBorder;
+    padding-bottom: 5px;
+	padding-top: 5px;
+
   }
   th {
     font-weight: bold;
