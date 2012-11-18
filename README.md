@@ -8,7 +8,7 @@ which is a fantastic styling toolkit. We've customized it a bit.
 
 # How to Build
 
-Check the [https://github.com/twitter/bootstrap#developers](dependencies). Then
+Check the dependencies at https://github.com/twitter/bootstrap#developers. Then
 build the css files with
 
 ```
